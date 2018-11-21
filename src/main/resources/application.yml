@@ -1,0 +1,16 @@
+#项目配置
+server:
+  port: 80  #端口
+  compression:
+    enabled: true
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /wechat-gzh   #路径
+
+# 定制不同环境的启动配置文件
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false  #前后端分离，关闭前端模板引擎，官方建议
